@@ -1,20 +1,27 @@
+/*Common Color Variables*/
+:root {
+  --col_heading: rgb(244,135,74);
+  --col_text: rgb(168,192,221);
+  --col_outline: rgb(18,57,196);
+}
+
 /*Bootstrap Panel Override*/
 .panel {
   background-color: rgba(255,255,255, 0.1);
-  padding: 10px;
-  border-color: rgb(45,76,186);
+  border-color: var(--col_outline);
 }
 
 /*Bootstrap panel heading override*/
 .panel > .panel-heading {
   background-color: rgba(20,27,34,.5);
   border-style: none;
+  color: var(--col_heading);
 }
 
-/*general font and background*/
+/*global cont fallback and background*/
 body {
   background-color: rgb(29,33,42);
-  color: rgb(168,192,221);
+  color: var(--col_text);
 }
 
 /*used on contact page for showing website brand icons*/
@@ -32,5 +39,14 @@ a.contact {
 
 /*makes all header text orange*/
 h1, h2, h3, h4 {
-  color: rgb(244,135,74);
+  color: var(--col_heading);
+}
+
+/*a textbox div to insert into booststrap panels to give them some padding*/
+.textbox {
+  padding: 10px;
+  margin: 5px;
+  border-style: solid;
+  border-color: var(--col_outline);
+  border-width: thin;
 }

@@ -3,24 +3,26 @@
   --col_heading: rgb(244,135,74);
   --col_text: rgb(168,192,221);
   --col_outline: rgb(18,57,196);
+  --col_bg: rgb(29,33,42);
+  --col_bg_heading: rgb(29,33,42);
 }
 
 /*Bootstrap Panel Override*/
 .panel {
-  background-color: rgba(255,255,255, 0.1);
+  background-color: rgba(255,255,255, 0.06);
   border-color: var(--col_outline);
 }
 
 /*Bootstrap panel heading override*/
 .panel > .panel-heading {
-  background-color: rgba(20,27,34,.5);
+  background-color: var(--col_bg_heading);
   border-style: none;
   color: var(--col_heading);
 }
 
 /*global cont fallback and background*/
 body {
-  background-color: rgb(29,33,42);
+  background-color: var(--col_bg);
   color: var(--col_text);
 }
 
@@ -52,9 +54,24 @@ h1, h2, h3, h4 {
 }
 
 /*a blog image that ban be placed in text boxes and float properly*/
-img.blog {
+ img.blog {
   float:right;
   width: 15%;
   height: auto;
   margin: 20px;
+}
+
+/*change color theme and make images smaller for printers*/
+@media print {
+  :root {
+    --col_heading: rgb(30,30,30);
+    --col_text: rgb(0,0,0);
+    --col_outline: rgb(100,100,100);
+    --col_bg: rgb(255,255,255);
+    --col_bg_heading: rgb(255,255,255);
+  }
+  img.blog {
+    width: 5%;
+    height: auto;
+  }
 }

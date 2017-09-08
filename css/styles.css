@@ -1,20 +1,36 @@
+/*Bootstrap Panel Override*/
 .panel {
-  background-color: rgba(255,255,255, 0.8);
+  background-color: rgba(255,255,255, 0.1);
   padding: 10px;
+  border-color: rgb(45,76,186);
 }
 
+/*Bootstrap panel heading override*/
+.panel > .panel-heading {
+  background-color: rgba(20,27,34,.5);
+  border-style: none;
+}
 
+/*general font and background*/
 body {
-  background-color: rgb(236,236,236);
+  background-color: rgb(29,33,42);
+  color: rgb(168,192,221);
 }
 
+/*used on contact page for showing website brand icons*/
 img.brandimg {
   float:left;
   width: 16px;
   height: 16px;
 }
 
+/*a bolder and center aligned hyperlink*/
 a.contact {
   text-align: center;
   font-weight: bold;
+}
+
+/*makes all header text orange*/
+h1, h2, h3, h4 {
+  color: rgb(244,135,74);
 }

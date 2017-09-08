@@ -6,3 +6,8 @@
 body {
   background-color: rgb(236,236,236);
 }
+
+img.brandimg {
+  float:left;
+  margin: 5px;
+}

@@ -50,3 +50,11 @@ h1, h2, h3, h4 {
   border-color: var(--col_outline);
   border-width: thin;
 }
+
+/*a blog image that ban be placed in text boxes and float properly*/
+img.blog {
+  float:right;
+  width: 15%;
+  height: auto;
+  margin: 20px;
+}

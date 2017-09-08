@@ -9,5 +9,11 @@ body {
 
 img.brandimg {
   float:left;
-  margin: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+a.contact {
+  text-align: center;
+  font-weight: bold;
 }

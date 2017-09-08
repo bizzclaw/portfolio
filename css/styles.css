@@ -7,6 +7,11 @@
   --col_bg_heading: rgb(29,33,42);
 }
 
+/*Class for the top panel used on pages, puts some space between the top of the page*/
+.toppanel {
+  margin-top: 20px;
+}
+
 /*Bootstrap Panel Override*/
 .panel {
   background-color: rgba(255,255,255, 0.06);
@@ -66,7 +71,7 @@ h1, h2, h3, h4 {
   :root {
     --col_heading: rgb(30,30,30);
     --col_text: rgb(0,0,0);
-    --col_outline: rgb(100,100,100);
+    --col_outline: rgb(40,40,40);
     --col_bg: rgb(255,255,255);
     --col_bg_heading: rgb(255,255,255);
   }
